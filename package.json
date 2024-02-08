@@ -13,14 +13,13 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged"
+      "pre-commit": "lint-staged && npm test"
     }
   },
   "lint-staged": {
     "*.{js,css,ts,tsx,jsx}": [
       "prettier --write",
-      "eslint --fix",
-      "jest"
+      "eslint --fix"
     ]
   },
   "jest": {
