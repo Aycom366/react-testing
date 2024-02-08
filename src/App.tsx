@@ -1,10 +1,10 @@
 import "./App.css";
-import { MuiMode } from "./mui/MuiMode";
+import { Users } from "./components/users/Users";
 
 function App() {
   return (
     <>
-      <MuiMode />
+      <Users />
     </>
   );
 }

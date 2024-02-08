@@ -25,7 +25,8 @@
     "test",
     "setupTests.ts",
     "jest.setup.ts",
-    "./jest-setup.ts"
+    "./jest-setup.ts",
+    "mocks"
   ],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
