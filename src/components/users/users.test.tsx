@@ -28,7 +28,7 @@ describe("Mocking HttP requests", () => {
       )
     );
     render(<Users />);
-    const errorMessage = await screen.findByText("Error fetching");
+    const errorMessage = await screen.findByText("Error fetching users");
     expect(errorMessage).toBeInTheDocument();
   });
 });
