@@ -11,6 +11,18 @@
     "test": "jest --watchAll",
     "coverage": "jest --coverage --watchAll  --collectCoverageFrom='!src/components/**/*.{types,stories,constants,test,spec}.{ts,tsx}'"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,css,ts,tsx,jsx}": [
+      "prettier --write",
+      "eslint --fix",
+      "jest"
+    ]
+  },
   "jest": {
     "coverageThreshold": {
       "global": {
